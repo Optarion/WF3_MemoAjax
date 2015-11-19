@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-
+	/* TODO ---- Change urls to own json's Google spreadsheets */
 	//List of the json files for each category
-	var urlList = ['1vWmav8YusujGN7idSOabeh51khli-hwZp1tOSQQxh0g',
+	var urlList = ['1x1jZKph4wasgu6KUcz3ntNXJrhNFHIQNLEm1MMwViPM',
 		'1VdXfBis9BavgDonwK96zj_YUC_9o8JhLdqO65xQ-aXI',
 		'16L74Wa-nghx1Z_IxL2MZpT3pindS2erixn-wS8I6s9g',
 		'1nYWXePQreinKwikmR2vksmhTnXhMOI5JtRlgR_msLho',
@@ -90,7 +90,7 @@ $(document).ready(function(){
 
 
 		$.ajax({
-			url: "https://spreadsheets.google.com/feeds/list/" + url + "/od6/public/values?alt=json",
+			url: "https://spreadsheets.google.com/feeds/list/" + url + "/default/public/values?alt=json",
 			success: function(data){
 
 				var entries = data.feed.entry;
@@ -170,7 +170,7 @@ $(document).ready(function(){
 
 	// Dynamically create buttons
 	$('#content li').click(function(e){
-		console.dir(e);
+
 		var sectionTitle = e.currentTarget.innerText.toLowerCase(), //Title of the clicked <li> with only the first letter Capitalized
 			index = $('#content li').index(this); // Number of the clicked <li>
 
@@ -180,9 +180,10 @@ $(document).ready(function(){
 		});
 	})
 
+	/* TODO - ADD CHAT */
 	//Open chat button
 	$('header span').click(function(){
-
+		console.log('bip');
+		$('#content_Chat').load('Chat/index.html body', function(){});
 	})
-
 })

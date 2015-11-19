@@ -7,6 +7,11 @@
 	<h3>Choisir une catégorie</h3>
 </section>
 
+<section id="content_Chat">
+
+</section>
+
+
 <main id="content" role="main">
 	<ul>
 		<?php

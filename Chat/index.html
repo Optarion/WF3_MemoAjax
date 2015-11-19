@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta viewport="width=min-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Chat Ajax</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+	</head>
+	<body>
+		<header>
+			<h1>Super Chat</h1>
+		</header>
+
+		<main>
+			<section id="form">
+				<form id="connectForm">
+					<label for="connectEmail">Email</label>
+					<input type="email" name="email" id="connectEmail" placeholder="ex: john.doe@mail.com">
+
+					<label for="connectPass">Password</label>
+					<input type="password" name="password" id="connectPass" placeholder="Password">
+
+					<p id="error"></p>
+
+					<input type="submit" id="connect" value="Connect me">
+				</form>
+
+				<form id="registerForm">
+					<label for="registerLogin">Choose Login</label>
+					<input type="text" name="pseudo" id="registerLogin" placeholder="ex: John">
+
+					<label for="registerEmail">Choose Email</label>
+					<input type="email" name="email" id="registerEmail" placeholder="ex: john.doe@mail.com">
+
+					<label for="registerPass">Choose Password</label>
+					<input type="password" name="password" id="registerPass" placeholder="Password">
+
+					<p id="error2"></p>
+
+					<input type="submit" id="subscribe" value="Subscribe">
+				</form>
+
+				<p id="welcomeMessage"></p>
+			</section>
+
+			<section id="chatRoom">
+				<ul id="listTabs" class="nav nav-tabs" role="tablist">
+					<li><a href="#general" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">General</a></li>
+				</ul>
+				<article id="chatMsgs">
+					
+					<div id="myTabContent" class="tab-content">
+				      <div role="tabpanel" class="tab-pane fade active in" id="general" aria-labelledby="general-tab">
+				      </div>
+				    </div>
+				</article><!--
+				 --><aside id="chatUsers">
+				</aside>
+				<form id="addChatMsg">
+					<label for="message">Write your message</label>
+					<input type="text" id="message" name="message">
+				</form>
+			</section>
+
+			<section id="memo">
+			</section>
+		</main>
+		<!-- Intégration du CDN jQuery -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</body>
+</html>
