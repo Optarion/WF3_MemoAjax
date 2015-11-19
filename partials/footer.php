@@ -1,20 +1,22 @@
 	<footer role="footer">
-		<section id="content_download">
-			<h3>Télécharger les PDF</h3>
-			<ul>
-				<?php foreach($categories as $document => $category_title){ ?>
-					<li>
-						<a href="img/media/<?= $document ?>"><span><?= $category_title ?></a>
-					</li>
-				<?php } ?>
-			</ul>
-		</section><section id="content_help">
-			<h3>Consulter l'aide en ligne</h3>
-			<ul>
-				<?php foreach($helps as $page_url => $page_label){ ?>
-					<li><a href="<?= $page_url ?>" target="_blank"><?= $page_label ?></a></li>
-				<?php } ?>
-			</ul>
+		<section>
+			<article id="content_download">
+				<h3>Télécharger les PDF</h3>
+				<ul>
+					<?php foreach($categories as $document => $category_title){ ?>
+						<li>
+							<a href="img/media/<?= $document ?>"><span><?= $category_title ?></a>
+						</li>
+					<?php } ?>
+				</ul>
+			</article><article id="content_help">
+				<h3>Consulter l'aide en ligne</h3>
+				<ul>
+					<?php foreach($helps as $page_url => $page_label){ ?>
+						<li><a href="<?= $page_url ?>" target="_blank"><?= $page_label ?></a></li>
+					<?php } ?>
+				</ul>
+			</article>
 		</section>
 
 		<article>

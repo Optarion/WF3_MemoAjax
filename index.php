@@ -13,7 +13,7 @@
 		$i = 1;
 		foreach($categories as $category_title){ ?><!--
 			--><li>
-				<a href="#"><img src="img/skill<?= $i ?>.png" alt="<?= $category_title ?>">
+				<a href="#"><img src="img/skill<?= $i ?>.svg" alt="<?= $category_title ?>">
 				<p><span><?= $category_title ?></span></p></a>
 			</li><!--
 			--><?php $i++; } ?>

@@ -17,6 +17,7 @@
 <body>
 
 	<header role="header">
-		<h1><a href="index.php"><?= ucwords($site_title) ?></a></h1>
-		<p>Home</p>
+		<h1><a href="#"><?= ucwords($site_title) ?></a></h1>
+		<p><a href="#">Home</a></p>
+		<span><a href="#">Open Chat</a></span>
 	</header>
